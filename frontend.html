@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+    <script src="https://kit.fontawesome.com/9d21656966.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin-left: 50px;
+        }
+
+        h1 {
+            color: orange;
+            text-align: center;
+        }
+
+        .enroll {
+            background-color: orange;
+            color: white;
+            padding: 20px;
+        }
+
+        .java,
+        .react {
+            background-color: navy;
+            padding: 10px;
+            color: white;
+        }
+
+        .headings {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-column-gap: 30px;
+            text-align: center;
+            padding: 10px;
+            padding-left: 20px;
+            width: 500px;
+            margin-left: 500px;
+            margin-bottom: 20px;
+        }
+
+        .data h3 {
+            text-align: center;
+            color: orange;
+            font-size: 25px;
+        }
+
+        .data ul {
+
+            font-size: 20px;
+            font-size: bold;
+            padding-bottom: 10px;
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+            box-shadow: 0.5px 0.5px 5px black;
+        }
+
+        /* Checkbox */
+        .tab input {
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+        }
+
+        .tab_content {
+            max-height: 0;
+            overflow: hidden;
+        }
+
+        .tab input:checked~.tab_content {
+            max-height: 100px;
+            overflow: scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <h1>Front End</h1>
+        </div>
+        <div class="headings">
+            <p class="enroll"> <b><i class="fa-solid fa-user"></i>+Enroll </b></p>
+            <p class="java"> <b>Javascript </b></p>
+            <p class="react"> <b>React </b></p>
+            <p class="enroll"> <b><i class="fa-solid fa-calendar-days"></i>View Batches </b></p>
+        </div>
+    </div>
+    <div class="data">
+        <div>
+            <h3>Who this course is for?</h3>
+            <ul>
+                <li>Manual tester,Non-programming aware testers interested in learning Automation</li>
+                <li>Any sofftware engineer who are interested iin Mobile technologies</li>
+                <li>Freshers/Undergraduates/Graduates/Software Testers</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Why take this course ?</h3>
+            <ul>
+                <li>Manual tester,Non-programming aware testers interested in learning Automation</li>
+                <li>Any sofftware engineer who are interested iin Mobile technologies</li>
+                <li>Freshers/Undergraduates/Graduates/Software Testers</li>
+            </ul>
+        </div>
+        <div>
+            <h3>What you will learn?</h3>
+            <ul>
+                <li>Manual tester,Non-programming aware testers interested in learning Automation</li>
+                <li>Any sofftware engineer who are interested iin Mobile technologies</li>
+                <li>Freshers/Undergraduates/Graduates/Software Testers</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, repudiandae facere in voluptatibus
+                    eligendi laudantium. </li>
+                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, commodi?</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, expedita aspernatur officiis
+                    delectus similique suscipit!</li>
+                <li>****** Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aspernatur?</li>
+                <li>All instalation Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, sed?</li>
+                <li> 100% JOB ASSISTENCE Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla perferendis
+                    facilis explicabo, autem nesciunt possimus numquam ab ad fugit rem.</li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <section style="background-color: orange;" class="accordion">
+            <div class="tab">
+                <input type="checkbox" name="accordion-1" id="cb1" checked>
+                <label for="cb1" class="tab_label">HTML</label>
+                <div class="tab_content">
+                    <P>
+                    <ul style="background-color: white;">
+                        <li>Manual tester,Non-programming aware testers interested in learning Automation</li>
+                        <li>Any sofftware engineer who are interested iin Mobile technologies</li>
+                        <li>Freshers/Undergraduates/Graduates/Software Testers</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, repudiandae facere in
+                            voluptatibus eligendi laudantium. </li>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, commodi?</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, expedita aspernatur
+                            officiis delectus similique suscipit!</li>
+                        <li>****** Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aspernatur?</li>
+                        <li>All instalation Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, sed?
+                        </li>
+                        <li> 100% JOB ASSISTENCE Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
+                            perferendis facilis explicabo, autem nesciunt possimus numquam ab ad fugit rem.</li>
+                    </ul>
+                    </P>
+                </div>
+            </div>
+        </section>
+        <br><br>
+        <section style="background-color: orange;" class="accordion">
+            <div class="tab">
+                <input type="checkbox" name="accordion-1" id="cb2" checked>
+                <label for="cb2" class="tab_label">CSS</label>
+                <div class="tab_content">
+                    <P>
+                    <ul style="background-color: white;">
+                        <li>Manual tester,Non-programming aware testers interested in learning Automation</li>
+                        <li>Any sofftware engineer who are interested iin Mobile technologies</li>
+                        <li>Freshers/Undergraduates/Graduates/Software Testers</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, repudiandae facere in
+                            voluptatibus eligendi laudantium. </li>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, commodi?</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, expedita aspernatur
+                            officiis delectus similique suscipit!</li>
+                        <li>****** Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aspernatur?</li>
+                        <li>All instalation Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, sed?
+                        </li>
+                        <li> 100% JOB ASSISTENCE Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
+                            perferendis facilis explicabo, autem nesciunt possimus numquam ab ad fugit rem.</li>
+                    </ul>
+                    </P>
+                </div>
+            </div>
+        </section>
+        <br><br>
+        <section style="background-color: orange;" class="accordion">
+            <div class="tab">
+                <input type="checkbox" name="accordion-1" id="cb3" checked>
+                <label for="cb3" class="tab_label">JAVASCRIPT</label>
+                <div class="tab_content">
+                    <P>
+                    <ul style="background-color: white;">
+                        <li>Manual tester,Non-programming aware testers interested in learning Automation</li>
+                        <li>Any sofftware engineer who are interested iin Mobile technologies</li>
+                        <li>Freshers/Undergraduates/Graduates/Software Testers</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, repudiandae facere in
+                            voluptatibus eligendi laudantium. </li>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, commodi?</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, expedita aspernatur
+                            officiis delectus similique suscipit!</li>
+                        <li>****** Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aspernatur?</li>
+                        <li>All instalation Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, sed?
+                        </li>
+                        <li> 100% JOB ASSISTENCE Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
+                            perferendis facilis explicabo, autem nesciunt possimus numquam ab ad fugit rem.</li>
+                    </ul>
+                    </P>
+                </div>
+            </div>
+        </section>
+        <br><br>
+
+        <section style="background-color: orange;" class="accordion">
+            <div class="tab">
+                <input type="checkbox" name="accordion-1" id="cb4" checked>
+                <label for="cb4" class="tab_label">REACT JS</label>
+                <div class="tab_content">
+                    <P>
+                    <ul style="background-color: white;">
+                        <li>Manual tester,Non-programming aware testers interested in learning Automation</li>
+                        <li>Any sofftware engineer who are interested iin Mobile technologies</li>
+                        <li>Freshers/Undergraduates/Graduates/Software Testers</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, repudiandae facere in
+                            voluptatibus eligendi laudantium. </li>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, commodi?</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, expedita aspernatur
+                            officiis delectus similique suscipit!</li>
+                        <li>****** Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aspernatur?</li>
+                        <li>All instalation Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, sed?
+                        </li>
+                        <li> 100% JOB ASSISTENCE Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
+                            perferendis facilis explicabo, autem nesciunt possimus numquam ab ad fugit rem.</li>
+                    </ul>
+                    </P>
+                </div>
+            </div>
+        </section>
+        <br><br>
+    </div>
+</body>
+</html>
